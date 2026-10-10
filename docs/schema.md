@@ -15,3 +15,7 @@
 - **IdempotencyKey 1..1 Transfer** (key maps to a transfer attempt)
 
 ## ER diagram (ASCII)
+Users (1) --- (N) Wallets
+Wallets (1) --- (N) Entries
+Transfers (1) --- (N) Entries
+IdempotencyKeys (1) --- (0..1) Transfers
