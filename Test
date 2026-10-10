@@ -1,1 +1,9 @@
 
+Tests included
+idempotency: same key same body → same response; same key different body → 422.
+
+stampede: concurrent requests with same key produce a single transfer.
+
+reconciliation: finds missing entries.
+
+prompt-injection: ensures statement Q&A endpoint treats input as data.
